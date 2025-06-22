@@ -14,3 +14,26 @@ A Benchmark for Five African Languages. arXiv preprint. ArXiv:2003.14402 AND Sol
 * **Ge'ez**: Henok Ademtew and Mikiyas Birbo. 2024. AGE: Amharic, Geez and English Parallel Dataset. In
 Proceedings of the Seventh Workshop on Technologies for Machine Translation of Low-Resource Languages (LoResMT 2024)
 
+## Models
+
+### Monolingual
+
+**NLLB**
+* Amharic: [No Norm](https://huggingface.co/Henok/eng-amh-normalized/tree/main) * [H-Only](https://huggingface.co/Henok/eng-amh-normalized/tree/main) * [HSL](https://huggingface.co/Atnafu/nllb_600M_eng2amh-WSL)
+* Tigrinya: [No Norm](https://huggingface.co/Atnafu/eng-tir-un) * [H-Only](https://huggingface.co/Atnafu/nllb_600M_eng2tir-norm)
+* Ge'ez: [No Norm](https://huggingface.co/Atnafu/nllb_600M_eng2geez-un)
+
+**Transformer Encoder-Decoder**
+* Amharic: [No Norm](https://huggingface.co/Tadesse/English-Amharic-MT-UnNorm) * [H-Only](https://huggingface.co/Tadesse/English-Amharic-MT-Norm) * [HSL](https://huggingface.co/Tadesse/English-Amharic-MT-Norm_TD)
+* Tigrinya: [No Norm](https://huggingface.co/Hellina/eng2tir_from_scratch_transformer) * [H-Only](https://huggingface.co/Hellina/eng2tir_h_only_transformer)
+* Ge'ez: [No Norm](https://huggingface.co/Hellina/eng2geez_from_scratch_transformer)
+  
+### Cross-Lingual Transfer
+
+**NLLB**
+* Tigrinya: [No Norm](https://huggingface.co/Atnafu/eng_amh_unnormalized-nllb_600M_eng2tir-un) * [H-Only](https://huggingface.co/Atnafu/eng-amh-norm-nllb_600M_eng2tir-un) * [HSL](https://huggingface.co/Atnafu/eng2amh-WSL-nllb_600M_eng2tir-un)
+* Ge'ez: [No Norm](https://huggingface.co/Atnafu/eng_amh_unnormalized-nllb_600M_eng2geez-un) * [H-Only](https://huggingface.co/Atnafu/eng-amh-norm-nllb_600M_eng2gez-un) * [HSL](https://huggingface.co/Atnafu/nllb_600M_eng2amh-WSL_eng2gez-un)
+
+**Transformer Encoder-Decoder**
+* Tigrinya: [No Norm](https://huggingface.co/Hellina/eng2tir_amh_no_norm_transformer) * [H-Only](https://huggingface.co/Hellina/eng2tir_amh_h_only_transformer) * [HSL](https://huggingface.co/Hellina/eng2tir_amh_hsl_transformer)
+* Ge'ez: [No Norm](https://huggingface.co/Hellina/eng2geez_amh_no_norm_transformer) * [H-Only](https://huggingface.co/Hellina/eng2geez_amh_h_only_transformer) * [HSL](https://huggingface.co/Hellina/eng2geez_amh_hsl_transformer)
